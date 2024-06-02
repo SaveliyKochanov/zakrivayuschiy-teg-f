@@ -5,11 +5,11 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 h1,
@@ -22,32 +22,34 @@ p,
 ul,
 ol,
 li {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-  color: inherit;
+	color: inherit;
 }
 
 button,
 input {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
+	color: currentColor;
+	font-family: inherit;
+	font-size: inherit;
+	border: none;
+	background-color: transparent;
 }
 
 ul,
 ol {
-  list-style: none;
+	list-style: none;
 }
 
 .visually-hidden {
-  position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  white-space: nowrap;
+	position: absolute;
+	inline-size: 1px;
+	block-size: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
 }

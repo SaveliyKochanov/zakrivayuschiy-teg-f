@@ -4,3 +4,58 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+	--title-font-weight: 765;
+	--content-font-weight: 465;
+	--background-color: #000;
+	--content-color: #00cc14;
+	--background-image: repeating-linear-gradient(
+			90deg,
+			#000 0 2px,
+			rgba(0, 0, 0, 0) 2px 4px
+		),
+		repeating-linear-gradient(180deg, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+		linear-gradient(#007f0c, #004306);
+	--button-text-color: #00cc14;
+	--heart-contour-color: #00cc14;
+	--floppy-fill-color: #00cc14;
+}
+
+@media (prefers-color-theme: light) {
+	:root.theme-light {
+		--background-color: #fff;
+		--content-color: #000;
+		--title-font-weight: 700;
+		--content-font-weight: 400;
+		--background-image: repeating-linear-gradient(
+				90deg,
+				#d3d3d3 0 2px,
+				rgba(0, 0, 0, 0) 2px 4px
+			),
+			repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+			linear-gradient(#e7e7e7, #1a1a1a);
+		--button-text-color: #000;
+		--heart-contour-color: #000;
+		--floppy-fill-color: #fff;
+	}
+}
+
+@media (prefers-color-theme: dark) {
+	:root.theme-dark {
+		--title-font-weight: 765;
+		--content-font-weight: 465;
+		--background-color: #000;
+		--content-color: #00cc14;
+		--background-image: repeating-linear-gradient(
+				90deg,
+				#000 0 2px,
+				rgba(0, 0, 0, 0) 2px 4px
+			),
+			repeating-linear-gradient(180deg, #000 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+			linear-gradient(#007f0c, #004306);
+		--button-text-color: #00cc14;
+		--heart-contour-color: #00cc14;
+		--floppy-fill-color: #00cc14;
+	}
+}
