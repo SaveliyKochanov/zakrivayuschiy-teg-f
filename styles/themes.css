@@ -22,12 +22,29 @@
 	--floppy-fill-color: #00cc14;
 }
 
+:root.theme-light {
+	--title-font-weight: 700;
+	--content-font-weight: 400;
+	--background-color: #fff;
+	--content-color: #000;
+	--background-image: repeating-linear-gradient(
+			90deg,
+			#d3d3d3 0 2px,
+			rgba(0, 0, 0, 0) 2px 4px
+		),
+		repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
+		linear-gradient(#e7e7e7, #1a1a1a);
+	--button-text-color: #fff;
+	--heart-contour-color: #000;
+	--floppy-fill-color: #fff;
+}
+
 @media (prefers-color-theme: light) {
-	:root.theme-light {
-		--background-color: #fff;
-		--content-color: #000;
+	:root {
 		--title-font-weight: 700;
 		--content-font-weight: 400;
+		--background-color: #fff;
+		--content-color: #000;
 		--background-image: repeating-linear-gradient(
 				90deg,
 				#d3d3d3 0 2px,
@@ -42,7 +59,7 @@
 }
 
 @media (prefers-color-theme: dark) {
-	:root.theme-dark {
+	:root {
 		--title-font-weight: 765;
 		--content-font-weight: 465;
 		--background-color: #000;
